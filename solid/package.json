@@ -1,0 +1,21 @@
+{
+  "name": "my-new-project",
+  "type": "module",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@wdio/browser-runner": "^8.6.7",
+    "@wdio/cli": "^8.6.7",
+    "@wdio/mocha-framework": "^8.6.6",
+    "@wdio/spec-reporter": "^8.6.6",
+    "chromedriver": "^111.0.0",
+    "solid-js": "^1.6.15",
+    "solid-testing-library": "^0.5.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2",
+    "vite-plugin-solid": "^2.6.1",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.ts"
+  }
+}
