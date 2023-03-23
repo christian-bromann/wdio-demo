@@ -1,10 +1,11 @@
 
 import { $, expect } from '@wdio/globals'
-import { render } from '@testing-library/vue'
 import { fn, mocked, mock } from '@wdio/browser-runner'
+import { cleanup, render } from 'solid-testing-library'
 
-import LoginComponent from './Login.vue'
+import LoginComponent from './Login.jsx'
 import { login } from './api.js'
+import './Login.css'
 
 mock('./api.js', () => ({
     login: fn()
@@ -20,8 +21,6 @@ describe('LoginComponent with mocked API', () => {
 
     it('failed log in with wrong credentials', async () => {
         render(LoginComponent)
-        console.log(login, mocked(login))
-        
         mocked(login).mockResolvedValue({ error: 'Invalid credentials' })
 
         await $('aria/Email').setValue('invalid@email.com')
@@ -41,4 +40,6 @@ describe('LoginComponent with mocked API', () => {
         await expect($('aria/Email')).not.toHaveElementClass('is-invalid')
         await expect($('aria/Password')).not.toHaveElementClass('is-invalid')
     })
+
+    afterEach(cleanup)
 })
