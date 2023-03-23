@@ -1,10 +1,10 @@
 
 import { $, expect } from '@wdio/globals'
-import { render } from '@testing-library/svelte'
+import { render } from '@testing-library/vue'
 import { fn, mocked, mock } from '@wdio/browser-runner'
 
-import LoginComponent from './Login.svelte'
-import { login } from './api.js'
+import LoginComponent from './Login.vue'
+import { login } from '../../svelte/src/api.js'
 
 mock('./api.js', () => ({
     login: fn()

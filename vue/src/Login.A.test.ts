@@ -1,20 +1,11 @@
 
 import { $, expect } from '@wdio/globals'
-import { render } from '@testing-library/svelte'
-import { fn, mocked, mock } from '@wdio/browser-runner'
+import { render } from '@testing-library/vue'
 
-import LoginComponent from './Login.svelte'
-import { login } from './api.js'
+import LoginComponent from './Login.vue'
+import './Login.css'
 
-mock('./api.js', () => ({
-    login: fn()
-}))
-
-describe('LoginComponent with mocked API', () => {
-    before(() => {
-        window.fetch = fn()
-    })
-
+describe('LoginComponent', () => {
     it('does not log in if input is empty', async () => {
         render(LoginComponent)
         await $('aria/Log In').click()
@@ -24,10 +15,6 @@ describe('LoginComponent with mocked API', () => {
 
     it('failed log in with wrong credentials', async () => {
         render(LoginComponent)
-        console.log(login, mocked(login))
-        
-        mocked(login).mockResolvedValue({ error: 'Invalid credentials' })
-
         await $('aria/Email').setValue('invalid@email.com')
         await $('aria/Password').setValue('wrong-password')
         await $('aria/Log In').click()
@@ -37,8 +24,6 @@ describe('LoginComponent with mocked API', () => {
 
     it('can log in with valid credentials', async () => {
         render(LoginComponent)
-        mocked(login).mockResolvedValue({ name: 'eve' })
-
         await $('aria/Email').setValue('eve.holt@reqres.in')
         await $('aria/Password').setValue('correct-password')
         await $('aria/Log In').click()

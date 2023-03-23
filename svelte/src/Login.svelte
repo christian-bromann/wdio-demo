@@ -13,7 +13,7 @@ async function onSubmitHandler (ev) {
         return
     }
 
-    const res = await login({ email: email, password: password })
+    const res = await login({ email, password })
     isSubmitValid = !Boolean(res.error)
 }
 
