@@ -1,15 +1,13 @@
 
 import { $, expect } from '@wdio/globals'
 import { render } from '@testing-library/svelte'
-import { fn, mocked, mock } from '@wdio/browser-runner'
+import { fn, mocked } from '@wdio/browser-runner'
 
 import LoginComponent from './Login.svelte'
 import './Login.css'
 
 describe('LoginComponent with mocked fetch', () => {
-    before(() => {
-        window.fetch = fn()
-    })
+    before(() => { window.fetch = fn() })
 
     it('does not log in if input is empty', async () => {
         render(LoginComponent)
