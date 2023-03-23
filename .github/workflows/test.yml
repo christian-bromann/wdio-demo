@@ -11,7 +11,7 @@ jobs:
           - react
           - svelte
           - vue
-          - solidjs
+          - solid
     steps:
         - name: Checkout
           uses: actions/checkout@v3
