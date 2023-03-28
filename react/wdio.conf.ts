@@ -11,6 +11,10 @@ export const config: Options.Testrunner = {
         // start browser window when `DEBUG` environment variable is set
         headless: !Boolean(process.env.DEBUG)
     }],
+    //
+    // ================
+    // TypeScript Setup
+    // ================
     autoCompileOpts: {
         autoCompile: true,
         tsNodeOpts: {
@@ -18,8 +22,6 @@ export const config: Options.Testrunner = {
             transpileOnly: true
         }
     },
-    
-    
     //
     // ==================
     // Specify Test Files

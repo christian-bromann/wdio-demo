@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react'
+import React, { useState, type ChangeEvent, type FormEvent } from 'react'
 
 import './Login.css'
 import { login, type Credentials } from './api.js'
