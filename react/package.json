@@ -13,9 +13,14 @@
     "react": "^18.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2",
-    "wdio-chromedriver-service": "^8.1.1"
+    "wdio-chromedriver-service": "^8.1.1",
+    "wdio-geckodriver-service": "^4.1.0"
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.ts"
+  },
+  "dependencies": {
+    "@wdio/types": "^8.6.8",
+    "geckodriver": "^3.2.0"
   }
 }
