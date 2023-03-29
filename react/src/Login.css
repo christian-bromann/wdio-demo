@@ -33,16 +33,12 @@ html, body {
 
 .login-dark form .form-control {
     background: none;
-    border: none;
+    /* border: none;
     border-bottom: 1px solid #434a52;
-    border-radius: 0;
+    border-radius: 0; */
     box-shadow: none;
     outline: none;
     color: inherit;
-}
-
-.login-dark form .form-control.is-invalid {
-    border-bottom-color: red;
 }
 
 .login-dark form .btn-primary {

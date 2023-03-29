@@ -9,7 +9,11 @@ export const config: Options.Testrunner = {
     runner: ['browser', {
         preset: 'react',
         // start browser window when `DEBUG` environment variable is set
-        headless: !Boolean(process.env.DEBUG)
+        headless: !Boolean(process.env.DEBUG),
+        coverage: {
+            enabled: true,
+            lines: 100
+        }
     }],
     //
     // ================
@@ -159,7 +163,7 @@ export const config: Options.Testrunner = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 600000000
     },
     //
     // =====

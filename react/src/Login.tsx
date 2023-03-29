@@ -1,30 +1,42 @@
-import React, { useState, type ChangeEvent, type FormEvent } from 'react'
+import React, { useState, useRef, type ChangeEvent, type FormEvent } from 'react'
 
 import './Login.css'
 import { login, type Credentials } from './api.js'
 
 export default function LoginComponent() {
-    const [credentials, setCredentials] = useState<Credentials>({ email: '', password: '' })
-    const [submitValid, setSubmitValid] = useState<boolean | undefined>()
+    const inputEmail = useRef<HTMLInputElement>()
+    const inputPassword = useRef<HTMLInputElement>()
+    const [submitValid, setSubmitValid] = useState<boolean>(false)
     
     const onSubmitHandler = async (ev: FormEvent<HTMLFormElement>) => {
-        ev.preventDefault()
+        console.log('OK', inputEmail.current.value, inputPassword.current.value);
         
-        if (!credentials.email || !credentials.password) {
-            return setSubmitValid(false)
+        ev.preventDefault()
+        setSubmitValid(true)
+        
+        if (!inputEmail.current.value) {
+            inputEmail.current.setCustomValidity('Missing Email')
+        } 
+        if (!inputPassword.current.value) {
+            inputPassword.current.setCustomValidity('Missing Password')
+        }
+        if (!inputEmail.current.value || !inputPassword.current.value) {
+            inputEmail.current.reportValidity()
+            inputPassword.current.reportValidity()
+            return
         }
 
-        const res = await login(credentials)
-        setSubmitValid(!Boolean(res.error))
-    }
-
-    function handleInputChange (ev: ChangeEvent<HTMLInputElement>) {
-        ev.preventDefault()
-        const target = ev.target
-        setCredentials({
-            ...credentials,
-            [target.name]: target.value
+        const res = await login({
+            email: inputEmail.current.value,
+            password: inputPassword.current.value
         })
+
+        if (res.error) {
+            inputEmail.current.setCustomValidity(res.error)
+            inputPassword.current.setCustomValidity(res.error)
+        }
+        inputEmail.current.reportValidity()
+        inputPassword.current.reportValidity()
     }
 
     return (
@@ -36,26 +48,31 @@ export default function LoginComponent() {
                 </div>
                 <div className="form-group">
                     <input
-                        className={'form-control' + (typeof submitValid === 'boolean' && !submitValid ? ' is-invalid' : '')}
+                        className="form-control"
                         type="email"
                         name="email"
                         placeholder="Email"
-                        value={credentials.email}
-                        onChange={handleInputChange}
+                        required
+                        ref={inputEmail}
                     />
                 </div>
                 <div className="form-group">
                     <input
-                        className={'form-control' + (typeof submitValid === 'boolean' && !submitValid ? ' is-invalid' : '')}
+                        className="form-control"
                         type="password"
                         name="password"
                         placeholder="Password"
-                        value={credentials.password}
-                        onChange={handleInputChange}
+                        required
+                        ref={inputPassword}
                     />
                 </div>
                 <div className="form-group">
-                    <button className="btn btn-primary btn-block">Log In</button>
+                    <button
+                        className="btn btn-primary btn-block"
+                        onClick={() => setSubmitValid(true)}
+                    >
+                        Log In
+                    </button>
                 </div>
                 <a className="forgot" href="#">Forgot your email or password?</a>
             </form>
