@@ -7,6 +7,10 @@ export const config: Options.Testrunner = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'browser',
+    //
+    // ================
+    // TypeScript Setup
+    // ================
     autoCompileOpts: {
         autoCompile: true,
         tsNodeOpts: {
@@ -14,8 +18,6 @@ export const config: Options.Testrunner = {
             transpileOnly: true
         }
     },
-    
-    
     //
     // ==================
     // Specify Test Files
@@ -145,15 +147,12 @@ export const config: Options.Testrunner = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
-
-
-    
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: process.env.DEBUG ? Infinity : 60000
     },
     //
     // =====
@@ -251,8 +250,6 @@ export const config: Options.Testrunner = {
      */
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
     // },
-
-
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
