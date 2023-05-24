@@ -4,7 +4,9 @@ A demo project showcasing component testing in WebdriverIO for various framework
 
 [![](https://badgen.net/badge/Run%20this%20/README/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=git%40github.com%3Achristian-bromann%2Fsfnode-demo.git)
 
-It will open VS Code and check out this project for you. You can then kick off a component tests in the framework of your desire:
+It will open VS Code and check out this project for you. You can also manually clone the project.
+
+You can then kick off a component tests in the framework of your desire:
 
 ## Lit HTML
 
