@@ -1,5 +1,5 @@
 {
-  "name": "my-new-project",
+  "name": "vue",
   "type": "module",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

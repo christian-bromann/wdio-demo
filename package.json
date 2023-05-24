@@ -1,0 +1,14 @@
+{
+    "name": "sfnode-demo",
+    "workspaces": [
+        "./lit",
+        "./preact",
+        "./react",
+        "./solid",
+        "./svelte",
+        "./vue"
+    ],
+    "scripts": {
+        "clean": "rm -rf ./{lit,preact,react,solid,svelte,vue}/{node_modules,coverage}"
+    }
+}

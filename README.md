@@ -6,52 +6,46 @@ A demo project showcasing component testing in WebdriverIO for various framework
 
 It will open VS Code and check out this project for you. You can also manually clone the project.
 
+After you downloaded this example repository, install the dependencies via:
+
+```sh
+npm install
+```
+
 You can then kick off a component tests in the framework of your desire:
 
 ## Lit HTML
 
 ```sh
-cd ./lit
-npm ci
-npm run wdio
+npm run wdio -w lit
 ```
 
 ## Preact
 
 ```sh
-cd ./preact
-npm ci
-npm run wdio
+npm run wdio -w preact
 ```
 
 ## React
 
 ```sh
-cd ./react
-npm ci
-npm run wdio
+npm run wdio -w react
 ```
 
 ## SolidJS
 
 ```sh
-cd ./solid
-npm ci
-npm run wdio
+npm run wdio -w solid
 ```
 
 ## Svelte
 
 ```sh
-cd ./svelte
-npm ci
-npm run wdio
+npm run wdio -w svelte
 ```
 
 ## Vue
 
 ```sh
-cd ./vue
-npm ci
-npm run wdio
+npm run wdio -w vue
 ```
