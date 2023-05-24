@@ -12,6 +12,7 @@ You can then kick off a component tests in the framework of your desire:
 
 ```sh
 cd ./lit
+npm ci
 npm run wdio
 ```
 
@@ -19,6 +20,7 @@ npm run wdio
 
 ```sh
 cd ./preact
+npm ci
 npm run wdio
 ```
 
@@ -26,6 +28,7 @@ npm run wdio
 
 ```sh
 cd ./react
+npm ci
 npm run wdio
 ```
 
@@ -33,6 +36,7 @@ npm run wdio
 
 ```sh
 cd ./solid
+npm ci
 npm run wdio
 ```
 
@@ -40,6 +44,7 @@ npm run wdio
 
 ```sh
 cd ./svelte
+npm ci
 npm run wdio
 ```
 
@@ -47,5 +52,6 @@ npm run wdio
 
 ```sh
 cd ./vue
+npm ci
 npm run wdio
 ```
