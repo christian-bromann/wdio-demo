@@ -9,6 +9,7 @@ It will open VS Code and check out this project for you. You can also manually c
 After you downloaded this example repository, install the dependencies via:
 
 ```sh
+export DETECT_CHROMEDRIVER_VERSION=true
 npm install
 ```
 
