@@ -4,23 +4,23 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
-    "@vitejs/plugin-react": "^3.1.0",
-    "@wdio/browser-runner": "^8.6.7",
-    "@wdio/cli": "^8.6.7",
-    "@wdio/mocha-framework": "^8.6.6",
-    "@wdio/spec-reporter": "^8.6.6",
-    "chromedriver": "^111.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "@wdio/browser-runner": "^8.10.5",
+    "@wdio/cli": "^8.10.5",
+    "@wdio/mocha-framework": "^8.10.4",
+    "@wdio/spec-reporter": "^8.10.5",
+    "chromedriver": "^113.0.0",
     "react": "^18.2.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.4",
     "wdio-chromedriver-service": "^8.1.1",
-    "wdio-geckodriver-service": "^4.1.0"
+    "wdio-geckodriver-service": "^5.0.1"
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.ts"
   },
   "dependencies": {
-    "@wdio/types": "^8.6.8",
-    "geckodriver": "^3.2.0"
+    "@wdio/types": "^8.10.4",
+    "geckodriver": "^4.0.0"
   }
 }
