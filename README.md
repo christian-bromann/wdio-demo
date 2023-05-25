@@ -9,7 +9,6 @@ It will open VS Code and check out this project for you. You can also manually c
 After you downloaded this example repository, install the dependencies via:
 
 ```sh
-export DETECT_CHROMEDRIVER_VERSION=true
 npx runme run -p install-lit install-preact install-react install-solid install-svelte install-vue
 ```
 
