@@ -6,52 +6,22 @@ A demo project showcasing component testing in WebdriverIO for various framework
 
 [![](https://badgen.net/badge/Run%20this%20/Lit%20Example/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fchristian-bromann%2Fsfnode-demo.git&fileToOpen=lit%2FREADME.md)
 
-```sh
-cd ./lit
-npm run wdio
-```
-
 ## Preact
 
 [![](https://badgen.net/badge/Run%20this%20/Preact%20Example/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fchristian-bromann%2Fsfnode-demo.git&fileToOpen=preact%2FREADME.md)
-
-```sh
-cd ./preact
-npm run wdio
-```
 
 ## React
 
 [![](https://badgen.net/badge/Run%20this%20/React%20Example/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fchristian-bromann%2Fsfnode-demo.git&fileToOpen=react%2FREADME.md)
 
-```sh
-cd ./react
-npm run wdio
-```
-
 ## SolidJS
 
 [![](https://badgen.net/badge/Run%20this%20/SolidJS%20Example/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fchristian-bromann%2Fsfnode-demo.git&fileToOpen=solid%2FREADME.md)
-
-```sh
-cd ./solid
-npm run wdio
-```
 
 ## Svelte
 
 [![](https://badgen.net/badge/Run%20this%20/Svelte%20Example/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fchristian-bromann%2Fsfnode-demo.git&fileToOpen=svelte%2FREADME.md)
 
-```sh
-cd ./svelte
-npm run wdio
-```
-
 ## Vue
 
 [![](https://badgen.net/badge/Run%20this%20/Vue%20Example/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fchristian-bromann%2Fsfnode-demo.git&fileToOpen=vue%2FREADME.md)
-
-```sh
-cd ./vue
-npm run wdio
-```
