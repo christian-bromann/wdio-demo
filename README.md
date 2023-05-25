@@ -10,7 +10,7 @@ After you downloaded this example repository, install the dependencies via:
 
 ```sh
 export DETECT_CHROMEDRIVER_VERSION=true
-npm install
+npx runme run -p install-lit install-preact install-react install-solid install-svelte install-vue
 ```
 
 You can then kick off a component tests in the framework of your desire:
