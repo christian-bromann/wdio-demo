@@ -1,4 +1,4 @@
-# SFNode Demo
+# WebdriverIO Component Testing Demo
 
 A demo project showcasing component testing in WebdriverIO for various frameworks. To run the demo, click the _"Run Example"_ button for the framework of your choice. It will open VS Code and will check out the project for you. Then just follow the instructions.
 
