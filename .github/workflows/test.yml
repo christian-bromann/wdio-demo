@@ -19,11 +19,10 @@ jobs:
           with:
             node-version: 18
         - name: Install
-          run: |
-            npm install
-            rm -r ./node_modules/chromedriver
-            npm i chromedriver --detect_chromedriver_version
+          run: npm install
           working-directory: ${{ matrix.exampleDir }}
+          env:
+            DETECT_CHROMEDRIVER_VERSION: 'true'
         - name: Test
           run: npm run wdio
           working-directory: ${{ matrix.exampleDir }}
