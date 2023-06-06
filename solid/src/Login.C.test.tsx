@@ -1,7 +1,7 @@
 
 import { $, expect } from '@wdio/globals'
 import { fn, mocked, mock } from '@wdio/browser-runner'
-import { cleanup, render } from 'solid-testing-library'
+import { cleanup, render } from '@solidjs/testing-library'
 
 import LoginComponent from './Login.jsx'
 import { login } from './api.js'

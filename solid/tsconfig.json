@@ -2,6 +2,7 @@
     "compilerOptions": {
         "moduleResolution": "node",
         "module": "ESNext",
+        "jsx": "preserve",
         "types": [
             "node",
             "@wdio/globals/types",

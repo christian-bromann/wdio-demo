@@ -15,6 +15,6 @@
     "wdio-chromedriver-service": "^8.1.1"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts"
+    "wdio": "wdio run ./wdio.conf.ts --spec ./src/Login.A.test.ts"
   }
 }

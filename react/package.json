@@ -17,7 +17,7 @@
     "wdio-geckodriver-service": "^5.0.1"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts"
+    "wdio": "wdio run ./wdio.conf.ts --spec ./src/Login.A.test.tsx"
   },
   "dependencies": {
     "@wdio/types": "^8.10.4",
