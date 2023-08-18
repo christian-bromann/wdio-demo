@@ -24,7 +24,7 @@ Update the following in your `wdio.conf.ts` to capture test coverage:
 
 ```ts
     runner: ['browser', {
-        preset: 'svelte',
+        preset: 'solid',
         // start browser window when `DEBUG` environment variable is set
         headless: !Boolean(process.env.DEBUG),
         coverage: {
