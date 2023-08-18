@@ -25,3 +25,7 @@ A demo project showcasing component testing in WebdriverIO for various framework
 ## Vue
 
 [![](https://badgen.net/badge/Run%20this%20/Vue%20Example/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fchristian-bromann%2Fwdio-demo.git&fileToOpen=vue%2FREADME.md)
+
+## Stencil
+
+[![](https://badgen.net/badge/Run%20this%20/Stencil%20Example/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fchristian-bromann%2Fwdio-demo.git&fileToOpen=stencil%2FREADME.md)
