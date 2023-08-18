@@ -20,8 +20,6 @@ describe('LoginComponent with mocked API', () => {
 
     it('failed log in with wrong credentials', async () => {
         render(LoginComponent)
-        console.log(login, mocked(login))
-        
         mocked(login).mockResolvedValue({ error: 'Invalid credentials' })
 
         await $('aria/Email').setValue('invalid@email.com')

@@ -13,6 +13,6 @@
     "vite-plugin-solid": "^2.7.0"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts --spec ./src/Login.A.test.tsx"
+    "wdio": "wdio run ./wdio.conf.ts"
   }
 }

@@ -12,6 +12,6 @@
     "typescript": "^5.1.6"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts --spec ./src/Login.A.test.ts"
+    "wdio": "wdio run ./wdio.conf.ts"
   }
 }

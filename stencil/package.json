@@ -1,9 +1,8 @@
 {
-  "name": "preact",
+  "name": "vue",
   "type": "module",
   "devDependencies": {
-    "@preact/preset-vite": "^2.5.0",
-    "@testing-library/preact": "^3.2.3",
+    "@stencil/core": "^4.0.5",
     "@wdio/browser-runner": "^8.15.4",
     "@wdio/cli": "^8.15.5",
     "@wdio/mocha-framework": "^8.15.4",

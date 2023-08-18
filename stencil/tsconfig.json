@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "types": [
+            "node",
+            "@wdio/globals/types",
+            "expect-webdriverio",
+            "@wdio/mocha-framework",
+            "@wdio/browser-runner"
+        ],
+        "moduleResolution": "node",
+        "module": "esnext",
+        "target": "es2017",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "jsxFragmentFactory": "Fragment"
+    }
+}
