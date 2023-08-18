@@ -9,13 +9,13 @@ npm install
 then run:
 
 ```sh { name=test }
-npx wdio run ./wdio.conf.ts --spec ./src/Login.C.test.ts
+npx wdio run ./wdio.conf.ts --spec Login.C.test.tsx
 ```
 
 If you like to run the test in watch mode, run:
 
 ```sh { name=test-watch }
-npx wdio run ./wdio.conf.ts --spec ./src/Login.C.test.ts --watch
+npx wdio run ./wdio.conf.ts --spec Login.C.test.tsx --watch
 ```
 
 # Enable Test Coverage
